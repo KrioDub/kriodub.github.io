@@ -1,0 +1,96 @@
+@font-face { 
+    font-family: "HelvetiHand KD";
+    src: url(HelvetiHand KD.otf)
+}
+
+
+
+body {
+  background-color: #e49b9e;
+  color: white;
+  font-family: "HelvetiHand Medium";
+}
+
+#container-main {
+  width: 100%;
+  height: 200vh;
+}
+
+#container-main > div {
+  width: 100%;
+  height: 100vh;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#logo-text {
+  font-size: 6vw;
+  font-family: "HelvetiHand Medium"
+}
+
+#c-1 a {
+  color: white;
+  text-decoration: none;
+}
+
+
+#myTab {
+  position: relative;
+  top: 2vh;
+  text-transform: uppercase;
+}
+
+#myTabContent {
+  position: relative;
+  top: 2vh;
+}
+
+#downarrow {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,0);
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+#downarrowimg {
+  width: 10vh;
+}
+
+@keyframes bounce {
+    0%   { transform: translate(-50%,0); }
+    50% { transform: translate(-50%,20%); }
+  100% { transform: translate(-50%,0); }
+}
+
+.con-about {
+  margin-top: 5vh;
+}
+
+#left-con-about {
+  display: block;
+  width: 50%;
+  height: 85vh;
+  background-repeat: no-repeat;
+  color: white;
+  float: left;
+  padding-right: 2vw;
+}
+
+
+#right-con-about {
+  display: block;
+  width: 50%;
+  height: 85vh;
+  float: right;
+  background-color: #ccc;
+}
+
+@media screen and (max-height: 900px) {
+  
+}

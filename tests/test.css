@@ -1,0 +1,30 @@
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: table;
+	width: 300%;
+	height: 100vh;
+	background-color: #E0777D;
+}
+
+.in-cont {
+	display: table-cell;
+	width: 100vw;
+	height: 100%;
+}
+
+#c-1 {
+	background-color: #E1DD8F;
+}
+
+#c-2 {
+	background-color: #4C86A8; 
+}
+
+#c-3 {
+	background-color: #870058; 
+}
