@@ -8,7 +8,7 @@
 body {
   background-color: #e49b9e;
   color: white;
-  font-family: "HelvetiHand Medium";
+  font-family: "HelvetiHand Medium" !important;
 }
 
 #container-main {
@@ -80,6 +80,7 @@ body {
   color: white;
   float: left;
   padding-right: 2vw;
+  line-height: 1.6;
 }
 
 
@@ -88,9 +89,12 @@ body {
   width: 50%;
   height: 85vh;
   float: right;
-  background-color: #ccc;
 }
 
-@media screen and (max-height: 900px) {
-  
+a {color: #943237;
+transition: all 0.1s ease-in-out}
+a:hover {color: #fff;}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: rgba(255,255,255,0.1);
 }
