@@ -1,6 +1,6 @@
 @font-face { 
-    font-family: "HelvetiHand KD";
-    src: url(HelvetiHand KD.otf)
+    font-family: "HelvetiHand RUS";
+    src: url(HelvetiHand RUS.otf)
 }
 
 
@@ -8,7 +8,7 @@
 body {
   background-color: #e49b9e;
   color: white;
-  font-family: "HelvetiHand Medium" !important;
+  font-family: "HelvetiHand RUS" !important;
 }
 
 #container-main {
@@ -30,7 +30,7 @@ body {
 
 #logo-text {
   font-size: 6vw;
-  font-family: "HelvetiHand Medium"
+  font-family: "HelvetiHand RUS"
 }
 
 #c-1 a {
@@ -97,4 +97,42 @@ a:hover {color: #fff;}
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   background-color: rgba(255,255,255,0.1);
+}
+
+#vid-frame {
+  position: absolute;
+  display: block;
+  background-image: url(video-frame.png);
+  background-size: cover;
+  width: 124vh;
+  height: 70vh;
+  margin-top: 5vh;
+  margin-left: 30vw;
+}
+
+#vid-cont {
+  display: inline-block;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  position: absolute;
+  width: 110vh;
+  height: 62vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  line-height: 62vh;
+  font-size: 2vw;
+}
+
+#series-choose {
+  display: block;
+  width: 25vw;
+  height: 60vh;
+  float: left;
+  margin-top: 10vh;
+  background-color: rgba(255,255,255,0.1);
+  line-height: 60vh;
+  text-align: center;
+  font-size: 2vw;
 }

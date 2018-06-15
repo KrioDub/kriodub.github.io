@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>test</title>
+	<title>player</title>
 	<link rel="stylesheet" href="test.css">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="test.js"></script>
 </head>
 <body>
-		<div id="d-v">
-			<div id="d-1"></div>
-			<div id="d-2"></div>
-			<div id="d-3"></div>
+
+<div class="wrp">
+	<div class="player">
+		<div class="play-pause" id="-1"></div>
+		<div class="nameSong">Название песни</div>
+		<div class="settings">
+			<div class="sledbtn" id="pred" data-id="-1">◄</div>
+			<div class="sledbtn" id="sled" data-id="-1">►</div>
+			<div class="mute">📢</div>
+			<input type="range" class="volume" min="0" max="100" value="100">
 		</div>
+		<div class="bar">
+			<div class="setTime"></div>
+			<div class="range">
+				<div class="progress"></div>
+				<div class="load"></div>
+			</div>
+		</div>
+		<div class="time">0:00</div>
+	</div>
+</div>
+
+
+
 
 </body>
 </html>
