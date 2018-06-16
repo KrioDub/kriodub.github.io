@@ -23,14 +23,19 @@ body {
 
 .vertical-center {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%,-40%);
 }
 
 #logo-text {
   font-size: 6vw;
-  font-family: "HelvetiHand RUS"
+  font-family: "HelvetiHand RUS";
+}
+
+#c-1 {
+  background: url(mic.gif) no-repeat;
+  background-size: contain;
 }
 
 #c-1 a {
@@ -38,11 +43,42 @@ body {
   text-decoration: none;
 }
 
+#urls {
+  position: relative;
+  display: block;
+  font-size: 2.5vw;
+  width: 100%;
+  height: 5vw;
+  top: 2vw;
+  text-align: center;
+  line-height: 5vw;
+}
+
+#u-vk {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: url(square.png) no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
+
+#u-yt {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background: url(square.png) no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
+
 
 #myTab {
   position: relative;
   top: 2vh;
   text-transform: uppercase;
+  z-index: 9999;
 }
 
 #myTabContent {
@@ -53,8 +89,8 @@ body {
 #downarrow {
   position: absolute;
   top: 85%;
-  left: 50%;
-  transform: translate(-50%,0);
+  left: 70%;
+  transform: translate(-70%,0);
   animation: bounce 1.5s infinite ease-in-out;
 }
 
@@ -99,40 +135,86 @@ a:hover {color: #fff;}
   background-color: rgba(255,255,255,0.1);
 }
 
+#watch {
+  width: 100%;
+  height: 90vh;
+}
+
 #vid-frame {
-  position: absolute;
+  position: relative;
   display: block;
   background-image: url(video-frame.png);
   background-size: cover;
-  width: 124vh;
-  height: 70vh;
-  margin-top: 5vh;
-  margin-left: 30vw;
+  width: 60vw;
+  height: 34vw;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%,-50%);
 }
 
 #vid-cont {
-  display: inline-block;
+  display: block;
   background-color: rgba(255,255,255,0.1);
   border-radius: 20px;
   position: absolute;
-  width: 110vh;
-  height: 62vh;
+  width: 55vw;
+  height: 31vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
-  line-height: 62vh;
+  line-height: 31vw;
   font-size: 2vw;
 }
 
 #series-choose {
-  display: block;
+  position: relative;
+  display: inline-block;
   width: 25vw;
-  height: 60vh;
+  height: 31vw;
   float: left;
-  margin-top: 10vh;
   background-color: rgba(255,255,255,0.1);
-  line-height: 60vh;
+  line-height: 31vw;
   text-align: center;
   font-size: 2vw;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%,-50%);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+
+::-webkit-scrollbar-track {
+background-color: rgba(0,0,0,0);
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 1vh;
+border-radius: 1vh;
+background-color: rgb(255,255,255);
+opacity: 0;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background-color: #fff;
+}
+
+::-webkit-scrollbar{
+width: 1vh;
+}
+
+#vid-cont iframe {
+  width: inherit;
+  height: inherit;
+  border-radius: 0.3vw;
 }
