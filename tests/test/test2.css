@@ -10,24 +10,24 @@ head,body {
 	position: absolute;
 	display: block;
 	width: 20vw;
-	height: 2vw;
+	height: 2.5vw;
 
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
 
-.button {
+#playpausebtn {
 	display: block;
-	width: 2vw;
-	height: 2vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	background: url(play.png) no-repeat;
-	background-size: 2vw 2vw;
+	background-size: 2.5vw 2.5vw !important;
 	float: left;
 }
 
 input[type="range"] {
-	-webkit-appearance: none;
+	-webkit-appearance: none !important;
 	margin: 0;
 	position: relative;
 	display: block;
@@ -35,19 +35,19 @@ input[type="range"] {
 	top: 50%;
 	left: 10%;
 	transform: translate(-10%,-50%);
-	height: 0.3vw;
+	height: 0.5vw;
 	outline: none;
 	background: url(range.png) no-repeat;
-	background-size: 14vw 0.3vw;
+	background-size: 14vw 0.5vw;
 	background-position: center;
 }
 
 
 input::-webkit-slider-thumb {
-	-webkit-appearance: none;
+	-webkit-appearance: none !important;
 	width: 0.3vw;
-	height: 3vw;
+	height: 2.5vw;
 	background: url(thumb.png) no-repeat;
-	background-size: 0.4vw 2vw;
+	background-size: 0.3vw 2.5vw;
 	background-position: center;
 }
