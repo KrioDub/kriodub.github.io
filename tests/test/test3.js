@@ -9,10 +9,10 @@ function initAudioPlayer() {
 	playbtn.addEventListener("click", playPause);
 	seekslider.addEventListener("oninput", (this.value));
 	seekslider.addEventListener("onchange", (this.value));
-	seekslider.addEventListener("mousedown", function(event){ seeking=true; seek(event);});
+	seekslider.addEventListener("mousedown", function(event){ seeking=true; seek(event); audio.volume=0;});
 	seekslider.addEventListener("click", function(event){ change();});
-	seekslider.addEventListener("mousemove", function(event){ seek(event);});
-	seekslider.addEventListener("mouseup", function(){ seeking=false;});
+	seekslider.addEventListener("mousemove", function(event){ seek(event); });
+	seekslider.addEventListener("mouseup", function(){ seeking=false;audio.volume=1;});
 	audio.addEventListener("timeupdate", function() { seektimeupdate(); });
 
 function change() {
