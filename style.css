@@ -8,7 +8,7 @@
 body {
   background-color: #e49b9e;
   color: white;
-  font-family: "HelvetiHand RUS" !important;
+  font-family: "KrioDubScript" !important;
 }
 
 #container-main {
@@ -30,7 +30,7 @@ body {
 
 #logo-text {
   font-size: 6vw;
-  font-family: "HelvetiHand RUS";
+  font-family: "KrioDubScript";
 }
 
 #c-1 {
