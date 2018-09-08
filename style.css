@@ -133,10 +133,11 @@ a:hover {color: #fff;}
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   background-color: rgba(255,255,255);
+    color: ##e49b9e;
 }
 
 .nav-pills .nav-link {
-    border 0.5% solid #fff;
+    border: 3px solid #fff;
     margin: 5%;
     color: #fff;
 }
