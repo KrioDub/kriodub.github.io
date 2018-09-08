@@ -132,7 +132,13 @@ transition: all 0.1s ease-in-out}
 a:hover {color: #fff;}
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255);
+}
+
+.nav-pills .nav-link {
+    border 0.5% solid #fff;
+    margin: 5%;
+    color: #fff;
 }
 
 #watch {
