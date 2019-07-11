@@ -6,7 +6,7 @@
 
 
 body {
-  background-color: #e49b9e;
+  background-color: #ff9999;
   color: white;
   font-family: "KrioDubScript" !important;
 }
@@ -133,7 +133,7 @@ a:hover {color: #fff;}
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   background-color: rgba(255,255,255);
-    color: #e49b9e;
+    color: #ff9999;
 }
 
 .nav-pills .nav-link {
@@ -147,48 +147,6 @@ a:hover {color: #fff;}
   height: 90vh;
 }
 
-#vid-frame {
-  position: relative;
-  display: block;
-  background-image: url(video-frame.png);
-  background-size: cover;
-  width: 60vw;
-  height: 34vw;
-  top: 50%;
-  left: 100%;
-  transform: translate(-100%,-50%);
-}
-
-#vid-cont {
-  display: block;
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 20px;
-  position: absolute;
-  width: 55vw;
-  height: 31vw;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  line-height: 31vw;
-  font-size: 2vw;
-}
-
-#series-choose {
-  position: relative;
-  display: inline-block;
-  width: 25vw;
-  height: 31vw;
-  float: left;
-  background-color: rgba(255,255,255,0.1);
-  line-height: 31vw;
-  text-align: center;
-  font-size: 2vw;
-  top: 50%;
-  left: 5%;
-  transform: translate(-5%,-50%);
-}
-
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -200,28 +158,32 @@ a:hover {color: #fff;}
 }
 
 
-
-::-webkit-scrollbar-track {
-background-color: rgba(0,0,0,0);
+#player {
+  position: relative;
+  width: 124.444446vh;
+  height: 70vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  mask: url(mask.svg);
 }
 
-::-webkit-scrollbar-thumb {
--webkit-border-radius: 1vh;
-border-radius: 1vh;
-background-color: rgb(255,255,255);
-opacity: 0;
+#player-header {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%,-2%);
+  font-size: 1.8vw;
 }
 
-::-webkit-scrollbar-thumb:hover{
-background-color: #fff;
-}
-
-::-webkit-scrollbar{
-width: 1vh;
-}
-
-#vid-cont iframe {
-  width: inherit;
-  height: inherit;
-  border-radius: 0.3vw;
+#aup {
+  position: absolute;
+  top: 25vh;
+  right: 10vw;
+  width: 20vw;
+  height: 20vw;
+  border: none;
 }
